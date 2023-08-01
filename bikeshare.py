@@ -20,13 +20,13 @@ def get_filters():
     while True:
         city_name = str(input('Please enter one of the cities Chicago, Washington or New York City for your analysis : ')).lower();
         if city_name == 'chicago':
-            city_name ='chicago.csv'
+            city_name =CITY_DATA[city_name]
             break;
         elif city_name == 'washington':
-            city_name = 'washington.csv'
+            city_name =CITY_DATA[city_name]
             break;
         elif city_name == 'new york city':
-            city_name = 'new_york_city.csv'
+            city_name =CITY_DATA[city_name]
             break;
         else: 
             print('city_name not match');
