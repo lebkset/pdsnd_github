@@ -4,7 +4,9 @@ import numpy as np
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
-              'washington': 'washington.csv' }
+              'washington': 'washington.csv' };
+months = ['january', 'february', 'march', 'april', 'may', 'june'];
+days= ['monday', 'tuesday', 'wednesday','thursday', 'friday', 'saturday', 'sunday'];
 
 def get_filters():
     """
@@ -35,7 +37,7 @@ def get_filters():
     # TO DO: get user input for month (all, january, february, ... , june)
     while True:
          month = str(input('Please enter any one of the first 6 months or enter All to select all 6 months : ')).lower();
-         months = ['january', 'february', 'march', 'april', 'may', 'june'];
+         
          if month == 'january':
             month = months[0]
             break;
@@ -65,7 +67,7 @@ def get_filters():
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
             day = str(input('input name of the day of week for filter by day, or can input "all" for no day need filter : ')).lower();
-            days = ['monday', 'tuesday', 'wednesday','thursday', 'friday', 'saturday', 'sunday'];
+            
 
             if day == 'monday':
                 day = days[0]
