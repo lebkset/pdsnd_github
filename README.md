@@ -9,7 +9,9 @@ This project used the Python to explore data related to bike share systems for t
 ### Library used
 ```
 - pandas
+refer document : https://pandas.pydata.org/
 - numpy
+refer document : https://numpy.org/
 ```
 
 ### Run test bike share
